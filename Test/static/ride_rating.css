@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .stars input {
+    display: none;
+  }
+  
+  .stars label {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .stars label:before {
+    content: '\2605'; /* Filled star */
+    color: white;
+  }
+  
+  .stars input:checked ~ label:before {
+    content: '\2605'; /* Filled star */
+    color: white;
+  }
+  
+  .stars input:checked ~ label ~ label:before {
+    content: '\2606'; /* Empty star */
+  }
+  
